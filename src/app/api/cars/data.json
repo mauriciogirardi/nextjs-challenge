@@ -1,0 +1,257 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "img": "/car.jpg",
+      "car": "mitsubishi",
+      "model": "montero",
+      "color": "yellow",
+      "modelYear": 2002,
+      "vin": "SAJWJ0FF3F8321657",
+      "price": 2814.46,
+      "availability": false
+    },
+    {
+      "id": 2,
+      "img": "/car.jpg",
+      "car": "volkswagen",
+      "model": "passat",
+      "color": "maroon",
+      "modelYear": 2008,
+      "vin": "WBANV9C51AC203320",
+      "price": 1731.98,
+      "availability": false
+    },
+    {
+      "id": 3,
+      "img": "/car.jpg",
+      "car": "saturn",
+      "model": "l-series",
+      "color": "red",
+      "modelYear": 2003,
+      "vin": "1HGCR6F34EA246317",
+      "price": 2238.35,
+      "availability": true
+    },
+    {
+      "id": 4,
+      "img": "/car.jpg",
+      "car": "jeep",
+      "model": "compass",
+      "color": "violet",
+      "modelYear": 2012,
+      "vin": "4USBT33454L511606",
+      "price": 2732.99,
+      "availability": false
+    },
+    {
+      "id": 5,
+      "img": "/car.jpg",
+      "car": "mitsubishi",
+      "model": "lancer evolution",
+      "color": "purple",
+      "modelYear": 2002,
+      "vin": "WAU2GBFCXDN339713",
+      "price": 3849.47,
+      "availability": false
+    },
+    {
+      "id": 6,
+      "img": "/car.jpg",
+      "car": "chevrolet",
+      "model": "suburban",
+      "color": "indigo",
+      "modelYear": 2009,
+      "vin": "WAUSH98E96A592763",
+      "price": 1252.30,
+      "availability": false
+    },
+    {
+      "id": 7,
+      "img": "/car.jpg",
+      "car": "dodge",
+      "model": "ram van b350",
+      "color": "yellow",
+      "modelYear": 1994,
+      "vin": "KNADH4A37A6919967",
+      "price": 1762.42,
+      "availability": true
+    },
+    {
+      "id": 8,
+      "img": "/car.jpg",
+      "car": "isuzu",
+      "model": "ascender",
+      "color": "teal",
+      "modelYear": 2004,
+      "vin": "5GTMNGEE8A8713093",
+      "price": 1081.40,
+      "availability": true
+    },
+    {
+      "id": 9,
+      "img": "/car.jpg",
+      "car": "bmw",
+      "model": "6 series",
+      "color": "purple",
+      "modelYear": 2008,
+      "vin": "5TDBY5G16DS675822",
+      "price": 1258.99,
+      "availability": true
+    },
+    {
+      "id": 10,
+      "img": "/car.jpg",
+      "car": "mitsubishi",
+      "model": "gto",
+      "color": "purple",
+      "modelYear": 1994,
+      "vin": "JM1NC2PFXE0140518",
+      "price": 3822.92,
+      "availability": false
+    },
+    {
+      "id": 11,
+      "img": "/car.jpg",
+      "car": "mazda",
+      "model": "mazda5",
+      "color": "red",
+      "modelYear": 2010,
+      "vin": "WAUNE78P18A342660",
+      "price": 3963.20,
+      "availability": true
+    },
+    {
+      "id": 12,
+      "img": "/car.jpg",
+      "car": "audi",
+      "model": "q7",
+      "color": "pink",
+      "modelYear": 2012,
+      "vin": "WA1WYBFE2AD448505",
+      "price": 1144.27,
+      "availability": true
+    },
+    {
+      "id": 13,
+      "img": "/car.jpg",
+      "car": "mercedes-benz",
+      "model": "sl-class",
+      "color": "aquamarine",
+      "modelYear": 1989,
+      "vin": "4A4AP3AU8FE713946",
+      "price": 1386.49,
+      "availability": true
+    },
+    {
+      "id": 14,
+      "img": "/car.jpg",
+      "car": "volvo",
+      "model": "c70",
+      "color": "red",
+      "modelYear": 2012,
+      "vin": "WAUHGBFC9DN768366",
+      "price": 1366.96,
+      "availability": true
+    },
+    {
+      "id": 15,
+      "img": "/car.jpg",
+      "car": "gmc",
+      "model": "envoy xl",
+      "color": "green",
+      "modelYear": 2006,
+      "vin": "WA1AV74L67D649365",
+      "price": 1221.46,
+      "availability": false
+    },
+    {
+      "id": 16,
+      "img": "/car.jpg",
+      "car": "gmc",
+      "model": "vandura g3500",
+      "color": "teal",
+      "modelYear": 1996,
+      "vin": "1FMJK2A5XAE576485",
+      "price": 1877.63,
+      "availability": true
+    },
+    {
+      "id": 17,
+      "img": "/car.jpg",
+      "car": "cadillac",
+      "model": "cts",
+      "color": "pink",
+      "modelYear": 2003,
+      "vin": "WAUVC68E02A369838",
+      "price": 2646.55,
+      "availability": true
+    },
+    {
+      "id": 18,
+      "img": "/car.jpg",
+      "car": "bmw",
+      "model": "x5 m",
+      "color": "mauv",
+      "modelYear": 2012,
+      "vin": "WA1YD54B63N613712",
+      "price": 2076.03,
+      "availability": true
+    },
+    {
+      "id": 19,
+      "img": "/car.jpg",
+      "car": "dodge",
+      "model": "viper",
+      "color": "turquoise",
+      "modelYear": 1999,
+      "vin": "WAUMF98P66A420495",
+      "price": 1323.48,
+      "availability": true
+    },
+    {
+      "id": 20,
+      "img": "/car.jpg",
+      "car": "ford",
+      "model": "taurus",
+      "color": "mauv",
+      "modelYear": 2002,
+      "vin": "WAUUL58E15A338821",
+      "price": 1801.89,
+      "availability": false
+    },
+    {
+      "id": 21,
+      "img": "/car.jpg",
+      "car": "suzuki",
+      "model": "swift",
+      "color": "green",
+      "modelYear": 1996,
+      "vin": "WAUDH98E78A844182",
+      "price": 2716.12,
+      "availability": true
+    },
+    {
+      "id": 22,
+      "img": "/car.jpg",
+      "car": "chrysler",
+      "model": "town & country",
+      "color": "mauv",
+      "modelYear": 2010,
+      "vin": "5XXGM4A71CG888959",
+      "price": 3480.31,
+      "availability": false
+    },
+    {
+      "id": 23,
+      "img": "/car.jpg",
+      "car": "maserati",
+      "model": "430",
+      "color": "blue",
+      "modelYear": 1991,
+      "vin": "2FMPK3J94FB631826",
+      "price": 1660.01,
+      "availability": false
+    }
+  ]
+}
