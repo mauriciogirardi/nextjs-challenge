@@ -7,7 +7,10 @@ export function Header() {
     <section className="border-b-2">
       <div className="px-4 h-14 md:h-16 flex items-center justify-between container lg:mx-auto">
         <Link href="/" className="flex items-center gap-2">
-          <Car className="text-orange-400 w-8 h-8 md:w-10 md:h-10 animate-bounce" />
+          <Car
+            className="text-orange-400 w-8 h-8 md:w-10 md:h-10 animate-bounce"
+            aria-label="Car"
+          />
           <strong className="text-lg md:text-2xl text-gray-600 hidden md:block">
             STAND
           </strong>

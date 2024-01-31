@@ -53,7 +53,11 @@ export function Search() {
     <aside className="w-full lg:w-64">
       <h2 className="text-2xl font-semibold mt-7 lg:mt-0 text-gray-500">Filtros</h2>
 
-      <form className="mt-11" onSubmit={handleSubmit(handleFilter)}>
+      <form
+        className="mt-11"
+        role="form"
+        onSubmit={handleSubmit(handleFilter)}
+      >
         <label
           className="flex flex-col gap-1 font-semibold text-gray-500"
           htmlFor="model"
