@@ -31,7 +31,11 @@ export default async function PageSearch({ searchParams }: PageSearchProps) {
           <p
             className="text-sm">Resultado pra: {' '}
             {car && <span className="font-semibold">Marca {car}</span>}
-            {model && <span className="font-semibold">e modelo {model}</span>}
+            {model &&
+              <span className="font-semibold">
+                {car && model ? ` e modelo ${model}` : `modelo ${model}`}
+              </span>
+            }
           </p>
         </div>
 

@@ -37,4 +37,14 @@ To generate the static pages of the car details, it is necessary that at the tim
 
 ### Build
 
-![Alt text](image.png)
+![Alt text](.github/image.png)
+
+### Unit Tests
+
+![Alt text](.github/image-1.png)
+
+### E2E Tests
+
+![Alt text](.github/image-cy-01.png)
+![Alt text](.github/image-cy-02.png)
+![Alt text](.github/image-cy-03.png)
