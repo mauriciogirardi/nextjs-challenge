@@ -15,18 +15,17 @@ type PageCarDetailsProps = {
 }
 
 export async function generateMetadata({
-  params,
+  params
 }: PageCarDetailsProps): Promise<Metadata> {
   const { car } = await getCar(params.id)
   return {
     title: car.car,
-    description:
-      `${car.car}, modelo ${car.model}, ano ${car.modelYear}, valor ${formatCurrency(car.price)}`
+    description: `${car.car}, modelo ${car.model}, ano ${car.modelYear}, valor ${formatCurrency(car.price)}`
   }
 }
 
 export async function generateStaticParams() {
-  const cars = await api<Car[]>('/cars')
+  const cars = await api<Car[]>("/cars")
   return cars.map((car) => {
     return {
       id: String(car.id)
@@ -38,7 +37,7 @@ export default async function PageCarDetails({ params }: PageCarDetailsProps) {
   const cardId = params.id
 
   if (!cardId) {
-    return redirect('/')
+    return redirect("/")
   }
 
   const { car } = await getCar(cardId)
@@ -47,7 +46,7 @@ export default async function PageCarDetails({ params }: PageCarDetailsProps) {
     <div>
       <Link
         href="/"
-        className="text-gray-500 flex mb-9 items-center hover:text-gray-600"
+        className="mb-9 flex items-center text-gray-500 hover:text-gray-600"
       >
         <ChevronLeft />
         Voltar
@@ -59,18 +58,16 @@ export default async function PageCarDetails({ params }: PageCarDetailsProps) {
           alt={`Imagem do carro ${car.car}, modelo ${car.model}, ano ${car.modelYear}`}
           width={400}
           height={200}
-          className="object-cover w-full md:w-[40%] rounded max-h-[250px]"
+          className="max-h-[250px] w-full rounded object-cover md:w-[40%]"
         />
 
-        <div className="mt-4 md:mt-0 w-full md:w-[60%]">
+        <div className="mt-4 w-full md:mt-0 md:w-[60%]">
           <div className="flex justify-between">
             <div>
-              <h1
-                className="uppercase text-black text-2xl font-bold"
-              >
+              <h1 className="text-2xl font-bold uppercase text-black">
                 {car.car}
               </h1>
-              <h1 className="capitalize text-gray-600 font-semibold">
+              <h1 className="font-semibold capitalize text-gray-600">
                 {car.model}
               </h1>
             </div>
@@ -83,16 +80,16 @@ export default async function PageCarDetails({ params }: PageCarDetailsProps) {
           </div>
 
           <div className="mt-5">
-            <p className="border-b-2 text-orange-600 border-orange-400 text-sm">
+            <p className="border-b-2 border-orange-400 text-sm text-orange-600">
               Descrição
             </p>
-            <p className="text-pretty leading-6 mt-4">
+            <p className="mt-4 text-pretty leading-6">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
               nostrum fuga dignissimos et minima accusamus illum! Debitis sit
               eligendi, aliquam modi odit vel iste facere libero rerum quisquam,
               totam tempora.
             </p>
-            <p className="text-pretty leading-6 mt-4">
+            <p className="mt-4 text-pretty leading-6">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
               nostrum fuga dignissimos et minima accusamus illum! Debitis sit
               eligendi, aliquam modi odit vel iste facere libero rerum quisquam,
@@ -101,16 +98,16 @@ export default async function PageCarDetails({ params }: PageCarDetailsProps) {
           </div>
 
           <div className="mt-7">
-            <p className="border-b-2 text-orange-600 border-orange-400 text-sm">
+            <p className="border-b-2 border-orange-400 text-sm text-orange-600">
               Acessórios
             </p>
-            <div className="flex items-center gap-3 text-orange-400 mt-4">
+            <div className="mt-4 flex items-center gap-3 text-orange-400">
               <Gamepad2 size={30} />
               <Lock />
               <MapPin />
               <PhoneCall />
             </div>
-            <p className="text-pretty leading-6 my-4">
+            <p className="my-4 text-pretty leading-6">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
               nostrum fuga dignissimos et minima accusamus illum! Debitis sit
               eligendi, aliquam modi odit vel iste facere libero rerum quisquam,

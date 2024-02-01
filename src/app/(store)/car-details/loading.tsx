@@ -1,58 +1,55 @@
-import { ChevronLeft } from "lucide-react";
-import Link from "next/link";
+import { ChevronLeft } from "lucide-react"
+import Link from "next/link"
 
-import { Skeleton } from "@/components/skeleton";
+import { Skeleton } from "@/components/skeleton"
 
 export default function DetailsLoading() {
   return (
     <div>
       <Link
         href="/"
-        className="text-gray-500 flex mb-9 items-center hover:text-gray-600"
+        className="mb-9 flex items-center text-gray-500 hover:text-gray-600"
       >
         <ChevronLeft />
         Voltar
       </Link>
 
       <section className="flex flex-col md:flex-row md:gap-12">
-        <Skeleton
-          className="w-full md:w-[40%] rounded max-h-[250px]"
-        />
+        <Skeleton className="max-h-[250px] w-full rounded md:w-[40%]" />
 
-        <div className="mt-4 md:mt-0 w-full md:w-[60%]">
+        <div className="mt-4 w-full md:mt-0 md:w-[60%]">
           <div className="flex justify-between">
             <div className="flex flex-col gap-3">
-              <Skeleton className="w-[300px] h-8" />
-              <Skeleton className="w-56 h-6" />
+              <Skeleton className="h-8 w-[300px]" />
+              <Skeleton className="h-6 w-56" />
             </div>
 
-            <div className="flex flex-col gap-3 justify-end items-end">
-              <Skeleton className="w-28 h-6" />
-              <Skeleton className="w-56 h-6" />
-              <Skeleton className="w-52 h-7" />
+            <div className="flex flex-col items-end justify-end gap-3">
+              <Skeleton className="h-6 w-28" />
+              <Skeleton className="h-6 w-56" />
+              <Skeleton className="h-7 w-52" />
             </div>
           </div>
 
           <div className="mt-5">
-            <p className="border-b-2 text-orange-600 border-orange-400 text-sm">
+            <p className="border-b-2 border-orange-400 text-sm text-orange-600">
               Descrição
             </p>
-            <Skeleton className="w-full h-56 mt-4" />
-            <Skeleton className="w-full h-56 mt-4" />
+            <Skeleton className="mt-4 h-56 w-full" />
+            <Skeleton className="mt-4 h-56 w-full" />
           </div>
 
           <div className="mt-7">
-            <p className="border-b-2 text-orange-600 border-orange-400 text-sm">
+            <p className="border-b-2 border-orange-400 text-sm text-orange-600">
               Acessórios
             </p>
-            <div className="flex items-center gap-3 text-orange-400 mt-4">
-              <Skeleton className="w-8 h-8" />
-              <Skeleton className="w-8 h-8" />
-              <Skeleton className="w-8 h-8" />
-              <Skeleton className="w-8 h-8" />
+            <div className="mt-4 flex items-center gap-3 text-orange-400">
+              <Skeleton className="h-8 w-8" />
+              <Skeleton className="h-8 w-8" />
+              <Skeleton className="h-8 w-8" />
+              <Skeleton className="h-8 w-8" />
             </div>
-            <Skeleton className="w-full h-56 my-4" />
-
+            <Skeleton className="my-4 h-56 w-full" />
           </div>
         </div>
       </section>

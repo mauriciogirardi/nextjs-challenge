@@ -1,31 +1,29 @@
-import "./globals.css";
+import "./globals.css"
 
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
 
-import { env } from "@/env";
+import { env } from "@/env"
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | standcar',
-    default: 'standcar'
+    template: "%s | standcar",
+    default: "standcar"
   },
-  description: "nextjs challenge",
-  metadataBase: new URL(env.APP_URL),
-};
+  description: "next.js challenge",
+  metadataBase: new URL(env.APP_URL)
+}
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt" className={inter.variable}>
-      <body className="bg-zinc-100 text-zinc-900 antialiased">
-        {children}
-      </body>
+      <body className="bg-zinc-100 text-zinc-900 antialiased">{children}</body>
     </html>
-  );
+  )
 }

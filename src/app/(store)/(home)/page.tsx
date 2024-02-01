@@ -5,25 +5,21 @@ import { CardCar } from "@/components/card-car"
 import { Search } from "@/components/search"
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: "Home"
 }
 
 export default async function PageHome() {
   const { cars } = await getCars()
 
   return (
-    <section className="flex flex-col gap-8 lg:flex-row mb-10">
+    <section className="mb-10 flex flex-col gap-8 lg:flex-row">
       <Search />
       <main className="flex-1">
-        <h1
-          className="text-2xl font-semibold mt-7 lg:mt-0 text-gray-500 border-b-2"
-        >
+        <h1 className="mt-7 border-b-2 text-2xl font-semibold text-gray-500 lg:mt-0">
           Carros
         </h1>
 
-        <div
-          className="mt-6 grid grid-flow-row md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-8"
-        >
+        <div className="mt-6 grid grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {cars?.map((car) => <CardCar key={car.id} car={car} />)}
         </div>
       </main>

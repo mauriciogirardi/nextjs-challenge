@@ -1,16 +1,14 @@
-import { Header } from "@/components/header";
+import { Header } from "@/components/header"
 
 export default function StoreLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <>
       <Header />
-      <div className="container px-4 mt-6 lg:mx-auto">
-        {children}
-      </div>
+      <div className="container mt-6 px-4 lg:mx-auto">{children}</div>
     </>
-  );
+  )
 }

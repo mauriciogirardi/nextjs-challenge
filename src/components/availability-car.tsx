@@ -5,18 +5,15 @@ type AvailabilityCarProps = {
 export function AvailabilityCar({ availability }: AvailabilityCarProps) {
   return (
     <>
-      {availability
-        ? <p
-          className="bg-green-200 text-sm px-4 mt-5 py-1 rounded-md shadow-md font-semibold text-gray-600"
-        >
+      {availability ? (
+        <p className="mt-5 rounded-md bg-green-200 px-4 py-1 text-sm font-semibold text-gray-600 shadow-md">
           Disponível
         </p>
-        : <p
-          className="bg-red-200 text-sm px-4 mt-5 py-1 rounded-md shadow-md font-semibold text-gray-600"
-        >
+      ) : (
+        <p className="mt-5 rounded-md bg-red-200 px-4 py-1 text-sm font-semibold text-gray-600 shadow-md">
           Indisponível
         </p>
-      }
+      )}
     </>
   )
 }
