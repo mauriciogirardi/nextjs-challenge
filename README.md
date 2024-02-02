@@ -9,7 +9,7 @@ This project was a next.js hands-on testing for senior develop a mini-applicatio
 - [x] Use SSR to render the car listing.
 - [x] Implement dynamic routing for each car detail page.
 - [x] Use getStaticPaths and getStaticProps to pre-render the detail pages.
-- [ ] writing tests using Jest and React Testing Library.
+- [x] writing tests using Jest and React Testing Library.
 
 ### Obs:
 
